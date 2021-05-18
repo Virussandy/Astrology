@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload_sub_details"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upload details"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:id="@+id/textview"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="25sp"
+        android:hint="Enter title"
+        android:background="@color/white"
+        android:padding="4dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/description"
+        android:textSize="20sp"
+        android:hint="Description"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:gravity="top|left|center_vertical|center_horizontal|center|start"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/submit"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_margin="10dp"
+        android:text="submit"
+        android:textSize="20sp"
+        android:background="@drawable/round"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

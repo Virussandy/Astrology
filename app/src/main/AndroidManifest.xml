@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="astrology.in">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity android:name=".Display_sub_details"></activity>
+        <activity android:name=".Upload_sub_details" />
+        <activity android:name=".Display_details" />
+        <activity android:name=".Upload_details" />
+        <activity android:name=".Viewdata" />
+        <activity android:name=".Upload_data" />
+        <activity android:name=".Display_data" />
+        <activity android:name=".Upload_sub_submain" />
+        <activity android:name=".Astro_sub_submain" />
+        <activity android:name=".Upload_submain" />
+        <activity android:name=".Astro_submain" />
+        <activity android:name=".Upload_main" />
+        <activity
+            android:name=".Astro_main"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Register" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
